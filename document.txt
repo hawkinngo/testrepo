@@ -1,0 +1,25 @@
+# Davinci Resolve
+1/ cd Davinci
+2/ cd squashfs-root
+3/ sudo apt update
+4/ sudo apt install libxcb-composite0 libxcb-cursor0 libxcb-xinerama0 libxcb-xinput0
+5/ sudo ./AppRun -i
+6/ copy fix_resolve.sh ra desktop
+7/ grant permission fix_resolve.sh => run sudo
+
+# Google Chrome
+1/ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+2/ sudo dpkg -i google-chrome-stable_current_amd64.deb
+
+# mount disk
+link: https://www.wikihow.com/Linux-How-to-Mount-Drive
+1/ lsblk -lf
+2/ sudo mkdir /media/name
+3/ sudo mount /path/to /media/name
+4/ ln -s /media/name ~/Name
+
+# mount disk start up
+link: https://www.alibabacloud.com/help/en/ecs/use-cases/configure-uuids-in-the-fstab-file-to-automatically-attach-data-disks
+1/ sudo cp /etc/fstab /etc/fstab.old
+2/ lsdsk -l
+3/
